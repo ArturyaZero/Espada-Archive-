@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter";
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f172a, #111827, #1e293b);
+}
+
+.card-wrapper {
+  max-width: 1100px;
+  margin: 0 60px 35px;
+  padding: 20px 10px;
+  overflow: hidden;
+}
+
+.card-list .card-item {
+  list-style: none;
+}
+
+.card-list .card-item .card-link {
+  user-select: none;
+  display: block;
+  background: #202938;
+  padding: 18px;
+  border-radius: 12px;
+  text-decoration: none;
+  border: 2px solid transparent;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.05);
+  transition: 0.2s ease;
+}
+.card-list .card-item .card-link:active {
+  cursor: grabbing;
+}
+.card-list .card-item .card-link:hover {
+  border-color: #5372f0;
+}
+
+.card-list .card-link .card-image {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card-list .card-link .badge {
+  color: #5372f0;
+  font-size: 0.95rem;
+  font-weight: 500;
+  padding: 8px 18px;
+  margin: 19px 0 18px;
+  background: #dde4ff;
+  width: fit-content;
+  border-radius: 50px;
+}
+
+/* changable */
+
+.card-list .card-link .badge.yammy {
+  color: #fca5a5;
+  background: #7f1d1d;
+}
+.card-list .card-link .badge.aaroniero {
+  color: #d9f99d;
+  background: #365314;
+}
+.card-list .card-link .badge.szayelaporro {
+  color: #f9a8d4;
+  background: #831843;
+}
+.card-list .card-link .badge.zommari {
+  color: #ddd6fe;
+  background: #3b0764;
+}
+.card-list .card-link .badge.grimmjow {
+  color: #7dd3fc;
+  background: #075985;
+}
+.card-list .card-link .badge.nnoitra {
+  color: #fdba74;
+  background: #7c2d12;
+}
+.card-list .card-link .badge.ulquiorra {
+  color: #86efac;
+  background: #064e3b;
+}
+.card-list .card-link .badge.harribel {
+  color: #67e8f9;
+  background: #164e63;
+}
+.card-list .card-link .badge.baraggan {
+  color: #c4b5fd;
+  background: #2e1065;
+}
+.card-list .card-link .badge.starrk {
+  color: #cbd5e1;
+  background: #1e293b;
+}
+
+.card-list .card-link .card-title {
+  font-size: 1.19rem;
+  color: #000;
+  font-weight: 600;
+}
+.card-list .card-link .card-btn {
+  height: 35px;
+  width: 35px;
+  color: #5372f0;
+  border-radius: 50%;
+  margin: 30px 0 5px;
+  border: 2px solid #5372f0;
+  background: none;
+  cursor: pointer;
+  transform: rotate(-45deg);
+  transition: 0.4s ease;
+}
+
+.card-list .card-item .card-link:hover .card-btn {
+  color: #fff;
+  background: #5372f0;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  color: #5372f0;
+  margin-top: -35px;
+}
+/* .swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background: none;
+  color: #b22485;
+  transition: 0.3s;
+  margin-top: -35px;
+} */
+
+.card-wrapper .swiper-pagination-bullet {
+  height: 13px;
+  width: 13px;
+  opacity: 0.5;
+  background: #b22485;
+}
+.card-wrapper .swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
+@media screen and (max-width: 720px) {
+  .card-wrapper {
+    margin: 0 10px 25px;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
+}
